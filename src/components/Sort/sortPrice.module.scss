@@ -1,0 +1,73 @@
+.sort{
+}
+
+.sort_button{
+  width: 242px;
+  height: 55px;
+  border: 1px solid var(--colors-purple, #4E148C);
+  background: var(--colors-light-lavender, #E8EBF2);
+  color: var(--colors-purple, #4E148C);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.sort_button:nth-of-type(2){
+  width: 243px;
+}
+
+.sort_button:first-child{
+  border-radius: 10px 0 0 10px;
+}
+
+.sort_button:last-child{
+  border-radius: 0 10px 10px 0;
+}
+
+.sort_button:hover{
+  background: var(--colors-purple, #4E148C);
+  color: var(--colors-white, #F7F9F7);
+}
+
+.sort_buttonActive{
+  background: var(--colors-purple, #4E148C);
+  color: var(--colors-white, #F7F9F7);
+}
+
+@media screen and (max-width: 768px){
+  .sort_button{
+    width: 230px;
+  }
+  .sort_button:nth-of-type(2){
+    width: 233px;
+  }
+
+}
+
+@media screen and (max-width: 430px){
+  .sort{
+    display: flex;
+  }
+
+  .sort_button{
+    width: 133px;
+    height: 42px;
+    border: 1px solid var(--colors-purple, #4E148C);
+    background: #D9D9D9;
+    color: var(--colors-purple, #4E148C);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+  }
+
+  .sort_button:nth-of-type(2){
+    width: 134px;
+  }
+
+}

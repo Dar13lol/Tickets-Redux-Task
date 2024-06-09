@@ -1,0 +1,156 @@
+.main{
+  display: flex;
+  margin-top: 20.55px;
+}
+
+.main_tickets_area{
+  margin-left: 50px;
+}
+
+.main_filters_area{
+  margin-left: 276px;
+}
+
+.main_filters_transfers{
+  border-radius: 10px;
+  background: #E8EBF2;
+  width: 272px;
+  height: 258px;
+}
+
+.main_filters_company{
+  margin-top: 47px;
+  width: 272px;
+  height: 198px;
+  border-radius: 10px;
+  background: var(--colors-light-lavender, #E8EBF2);
+}
+
+.main__button{
+  width: 727px;
+  height: 62px;
+  border-radius: 10px;
+  background: var(--colors-purple, #4E148C);
+  color: var(--colors-white, #F7F9F7);
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+  cursor: pointer;
+  margin-top: 74px;
+}
+
+.main_tickets_filterBlock{
+  display: none;
+}
+
+@media screen and (max-width: 768px){
+  .main{
+    display: flex;
+    margin-top: 20.55px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main_tickets_area{
+    margin-left: 0;
+  }
+
+  .main_filters_area{
+    display: none;
+    margin-left: 0;
+  }
+
+  .main_tickets_filterBlock{
+    display: flex;
+    width: 695px;
+    min-height: 44px;
+    background: var(--colors-purple, #4E148C);
+    margin-top: 12px;
+    border-radius: 10px;
+  }
+
+  .main_tickets_filterBlockActive{
+    border-radius: 10px 10px 0 0;
+  }
+
+  .main__button{
+    width: 695px;
+    height: 62px;
+    border-radius: 10px;
+    background: var(--colors-purple, #4E148C);
+    color: var(--colors-white, #F7F9F7);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+    margin-top: 52px;
+  }
+}
+
+@media screen and (max-width: 430px){
+  .main{
+    display: flex;
+    margin-top: 24px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main_tickets_area{
+    margin-left: 0;
+  }
+
+  .main_filters_area{
+    margin-left: 0;
+  }
+
+  .main_filters_transfers{
+    border-radius: 10px;
+    background: #E8EBF2;
+    width: 272px;
+    height: 258px;
+  }
+
+  .main_filters_company{
+    margin-top: 47px;
+    width: 272px;
+    height: 198px;
+    border-radius: 10px;
+    background: var(--colors-light-lavender, #E8EBF2);
+  }
+
+  .main__button{
+    width: 400px;
+    height: 62px;
+    border-radius: 10px;
+    background: var(--colors-purple, #4E148C);
+    color: var(--colors-white, #F7F9F7);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+    margin-top: 53px;
+  }
+
+  .main_tickets_filterBlock{
+    display: flex;
+    width: 400px;
+    min-height: 38px;
+    background: var(--colors-purple, #4E148C);
+    margin-top: 12px;
+    border-radius: 10px;
+  }
+
+  .main_tickets_filterBlockActive{
+    border-radius: 10px 10px 0 0 ;
+  }
+
+}

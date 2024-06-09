@@ -1,0 +1,66 @@
+.filterCompany{
+  padding: 19px 0 0 19px;
+}
+
+.companyTitle{
+  color: var(--colors-purple, #4E148C);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.companyName{
+  margin-left: 19px;
+  color: var(--colors-lavender, #858AE3);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.company_point{
+  margin-left: 23px;
+  margin-top: 19px;
+  display: flex;
+}
+
+.company_point:nth-of-type(-n+1){
+  margin-top: 26px;
+}
+
+@media screen and (max-width: 768px){
+
+  .filterCompany{
+    padding: 5px 0 0 24px;
+  }
+
+  .companyTitle{
+    color: var(--colors-white, #F7F9F7);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .companyName{
+    margin-left: 19px;
+    color: var(--colors-white, #F7F9F7);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .company_point{
+    margin-left: 0;
+    margin-top: 19px;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 430px){}

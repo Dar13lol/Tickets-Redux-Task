@@ -1,0 +1,120 @@
+@mixin text($color, $size, $weight){
+  color:$color;
+  font-family: Inter;
+  font-size: $size;
+  font-style: normal;
+  font-weight: $weight;
+  line-height: normal;
+}
+
+.ticket_price__text{
+  @include text(#4E148C, 32px, 700);
+}
+
+.ticket_fromto_text{
+  @include text(#858AE3, 16px, 500);
+  margin-top: 25px;
+}
+
+.ticket_time_text{
+  @include text(#4E148C, 16px, 500);
+  margin-top: 9px;
+}
+
+.ticket_container {
+  width: 695px;
+  height: 174px;
+  border-radius: 10px;
+  background: var(--colors-light-lavender, #E8EBF2);
+}
+
+.ticket_container:nth-of-type(n+2){
+  margin-top: 47px;
+}
+
+.ticket_container__position{
+  padding: 32px 40px 25px 39px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ticket_info__pricetimefromto{
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.ticket_info__duration{
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.ticket_info__company{
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.ticket_info__img{
+  height: fit-content;
+  width: fit-content;
+}
+
+.one_ticket{
+  margin-top: 29px;
+}
+
+@media screen and (max-width: 430px){
+
+  .ticket_container {
+    width: 400px;
+    height: 174px;
+    border-radius: 10px;
+    background: var(--colors-light-lavender, #E8EBF2);
+  }
+
+  .ticket_container:nth-of-type(n+2){
+    margin-top: 35px;
+  }
+
+  .ticket_container__position{
+    padding: 38px 28px 25px 23px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .ticket_info__pricetimefromto{
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .ticket_info__duration{
+    width: 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .ticket_info__company{
+    width: 118px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .ticket_info__img{
+    width: 118px;
+    height: fit-content;
+  }
+
+  .one_ticket{
+    margin-top: 25px;
+  }
+
+}

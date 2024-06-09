@@ -1,0 +1,68 @@
+.filterInfo{
+  width: 100%;
+  position: relative;
+}
+
+.filterInfo_settingsBar{
+  padding-left: 23px;
+  padding-right: 27px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filterInfo_text{
+  color: var(--colors-white, #F7F9F7);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.filterInfo_settingsButton{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.filterInfo_settingsText{
+  color: var(--colors-white, #F7F9F7);
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-right: 17px;
+}
+
+.filterInfo_arrow{
+  width: 20px;
+  height: 12.131px;
+}
+
+.filterInfo_settingsOptions{
+  display: flex;
+  height: 223px;
+  width: 100%;
+  position: absolute;
+  background: var(--colors-purple, #4E148C);
+  border-radius: 0 0 10px 10px;
+}
+
+@media screen and (max-width: 430px){
+  .filterInfo_text{
+    color: var(--colors-white, #F7F9F7);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .filterInfo_settingsText{
+    display: none;
+  }
+
+}
